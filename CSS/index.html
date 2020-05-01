@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS crash course</title>
+    <!-- Internal CSS -->
+    <style type="text/css">
+    #h1{
+        color:green;
+    }
+    </style>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+    Inline CSS: Directly in the html element (NO!)<br>
+    Internal CSS: Using &lt;style&gt; tags within a single document<br>
+    External CSS: Linking an external .css file<br>
+    <br>
+    <h1 style="color:red">Inline CSS. Can only used for this content</h1>
+    <h1 id="h1">Internal CSS. Can only used in this file</h1>
+    <h1 id="h1-1">External CSS. Need to link .css file.</h1>
+    CSS: selector <span style="color:red">{</span> property<span style="color:pink">:</span> value<span style="color:blue">;</span> <span style="color:orange">}</span><br>
+    <span style="color:red">{</span> = declaration start<br>
+    <span style="color:pink">:</span> = property/value separator<br>
+    <span style="color:blue">;</span> = declaration separator<br>
+    <span style="color:orange">}</span> = declaration end<br>
+    <br>
+    It seems that External CSS would not cover Inxxx CSS<br>
+    For color, you can use <strong>Color Names</strong>, <strong>HTML5 Color Names</strong>, <strong>Hexadecimal</strong> and <strong>RGB</strong><br>
+    <br>
+    Use Web Safe Fonts.<br>
+    font-weight: bold/400/normal...<br>
+    <br>
+    <div class="container">
+        CSS中的.container对此处↓↓↓进行修改，一般使用百分比设置宽度<br>
+        <div class="box-1">
+            CSS中的.box-1对此处↓↓↓进行修改
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam reprehenderit sint facere vitae officia quibusdam modi animi ad fugit dolore obcaecati impedit magnam quo repellat corrupti est aliquid, voluptas quam!</p>
+        </div>
+
+        <div class="box-2">
+            CSS中的.box-2对此处↓↓↓进行修改
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam reprehenderit sint facere vitae officia quibusdam modi animi ad fugit dolore obcaecati impedit magnam quo repellat corrupti est aliquid, voluptas quam!
+                <br>
+                <a class="botton" href="">Read More</a>
+            </p>
+        </div>
+
+        <div class="categories">
+            <h2>CSS中的.categories对此处↓↓↓进行修改</h2>
+            hover changes when the cursor covers the content<br>
+            avtice changes when you click on the content<br>
+            <ul>
+                <li><a href="#">Category1</a></li>
+                <li><a href="#">Category2</a></li>
+                <li><a href="#">Category3</a></li>
+                <li><a href="test.html" target="_blank">Category4</a></li>
+            </ul>
+            it's black because it goes actual location<br>
+        </div>
+    </div>
+    id: unique, aren't going to be put anywhere else<br>
+    class: may be used somewhere else<br>
+    use '.'(dot) to target a class<br>
+    <br>
+    <img src="boxmodel.png" alt="box model" width="300px">
+
+    <form class="my-form">
+        <div class="form-group">
+            <label>Name: </label>
+            <input type="text" name="name">
+        </div>
+        <div class="form-group">
+            <label>Email: </label>
+            <input type="text" name="email">
+        </div>
+        <div class="form-group">
+            <label>Message: </label>
+            <textarea name="message"></textarea>
+        </div>
+        <input class="button" type="submit" value="Submit">
+        This button's type is not text<br>
+        selector之间用逗号‘,’分隔，用[ ]做更具体的选择<br>
+    </form>
+    <div class="block">
+        <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor officiis laudantiumLorem ipsum dolor sit amet consectetur adipisicing elit. Dolor officiis laudantium</p>
+    </div>
+    <div class="block">
+        <h3>This is float</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor officiis laudantiumLorem ipsum dolor sit amet consectetur adipisicing elit. Dolor officiis laudantium</p>
+    </div>
+    <div class="block">
+        <h3>box-sizing: border-box</h3>
+        <p>This takes in the border and padding, and applys them into 33.3%</p>
+    </div>
+
+    <div class="clr"></div>
+
+    <div id="main-block">
+        <h3>main-block</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor officiis laudantiumLorem ipsum dolor sit amet consectetur adipisicing elit. Dolor officiis laudantium</p>
+    </div>
+
+    <div id="sidebar">
+        <h3>sidebar</h3>
+        <p>border-box again.</p>
+    </div>
+    
+    <div class="clr"></div>
+
+    <div class="p-box">
+        <h1 style="color: orangered;">parent need to be relative</h1>
+        <h2 style="color: orangered;">then it can be absolute</h2>
+    </div>
+
+    <ul class="my-list">
+        <li>li:first-child</li>
+        <li>even是偶数</li>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>li:nth-child(5). nth表示第n个</li>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>li:last-child</li>
+    </ul>
+
+    <a class="fix-me button" href="">Hello</a>
+</body>
+</html>
